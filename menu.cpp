@@ -39,70 +39,8 @@ void tetera(int val)
 	glutWireTeapot(val);
 	
 }	
-
-/*void cubo(void)
-{
-	// Primera cara, se identica por multiples colores
-    glBegin(GL_POLYGON);
-	glColor3f( 1.0, 1.0, 1.0 );
-    glVertex3f(  0.5, -0.5, -0.5 );      // V1 Blanco
-    glColor3f( 1.0, 1.0, 0.0 );
-    glVertex3f(  0.5,  0.5, -0.5 );      // V2 Amarillo
-    glColor3f( 0.0, 0.0, 1.0 );
-    glVertex3f( -0.5,  0.5, -0.5 );      // V3 es azul
-    glColor3f( 1.0, 0.0, 0.0 );
-    glVertex3f( -0.5, -0.5, -0.5 );      // V4 rojo
-
-    glEnd();
-
-    // LADO TRASERO: lado blanco
-    glBegin(GL_POLYGON);
-    glColor3f( 1.0,  1.0, 1.0 );
-    glVertex3f( 0.5, -0.5, 0.5 );
-    glVertex3f( 0.5,  0.5, 0.5 );
-    glVertex3f(-0.5,  0.5, 0.5 );
-    glVertex3f(-0.5, -0.5, 0.5 );
-    glEnd();
-
-    // LADO DERECHO: lado verde
-    glBegin(GL_POLYGON);
-    glColor3f( 0.0,  1.0,  0.0 );
-    glVertex3f(0.5, -0.5, -0.5 );
-    glVertex3f(0.5,  0.5, -0.5 );
-    glVertex3f(0.5,  0.5,  0.5 );
-    glVertex3f(0.5, -0.5,  0.5 );
-    glEnd();
-
-    // LADO IZQUIERDO: lado Amarillo
-    glBegin(GL_POLYGON);
-    glColor3f(1.0,  1.0,  0.0 );
-    glVertex3f(-0.5, -0.5,  0.5 );
-    glVertex3f(-0.5,  0.5,  0.5 );
-    glVertex3f(-0.5,  0.5, -0.5 );
-    glVertex3f(-0.5, -0.5, -0.5 );
-    glEnd();
-
-    // LADO SUPERIOR: lado azul
-    glBegin(GL_POLYGON);
-    glColor3f(0.0,  0.0,  1.0 );
-    glVertex3f(0.5,  0.5,  0.5 );
-    glVertex3f(0.5,  0.5, -0.5 );
-    glVertex3f(-0.5,  0.5, -0.5 );
-    glVertex3f(-0.5,  0.5,  0.5 );
-    glEnd();
-
-    // LADO INFERIOR: lado rojo
-    glBegin(GL_POLYGON);
-    glColor3f(1.0,  0.0,  0.0 );
-    glVertex3f(0.5, -0.5, -0.5 );
-    glVertex3f(0.5, -0.5,  0.5 );
-    glVertex3f(-0.5, -0.5,  0.5 );
-    glVertex3f(-0.5, -0.5, -0.5 );
-    glEnd();
-	
-}
-
-*/
+glColor3f( 0.0, 0.0, 1.
+   
 void display()
 {
     //  Borrar pantalla y Z-buffer
@@ -131,20 +69,6 @@ void display()
     * */
     glScalef(scale, scale, scale);
     
-    //glutWireSphere(0.8, 40.0, 40.0);//esfera
-    //glutWireCube(2.0f);//Cubo
-    //glutWireTorus(0.5, 1.0, 20, 20);//Dona:v
-    //glutWireCone(1, 1, 20, 20);//Cono
-    //glutWireTeapot(1.0);//Tetera
-    //glutWiremakDodecahedron();
-    //glutWireIcosahedron();
-    //glutWireTetrahedron();
-    
-    
-    //cubo();
-    
-    
-//    punto(0, 0);
 
     
 
