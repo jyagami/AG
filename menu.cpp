@@ -13,30 +13,24 @@ void punto(float x, float y)
 
 	glPointSize(25);
 	glBegin(GL_POINTS);
-
 	glColor3f( 1.0, 1.0, 1.0 );
     glVertex3f(  x, y, 0.0); 
 	glEnd();
 	
 }
-
-void tetera(int val)
-{
-	glutWireTeapot(val);
-}	
-   
+  
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 }
-
+	//Creaamos la funcion menu y su contenido
 void menu(int valor)
 {
 
 	if(valor==1)
 	{
-	punto(0, 0);
+	glutWireTorus(0.5, 1.0, 20, 20);
 	glFlush();
     glutSwapBuffers();
 	}
@@ -50,7 +44,7 @@ void menu(int valor)
 
 	else if(valor==3)
 	{
-	tetera(1.0);
+	glutWireTeapot(1.0);;
 	glFlush();
     glutSwapBuffers();
 	}
@@ -63,10 +57,9 @@ void menu(int valor)
  glFlush();
     
 }
-
+	//Llamamos a la funcion menu 
 void menu_opciones(void)
 {
-
 	glutCreateMenu(menu);
 	glutAddMenuEntry("Dibujo 1", 1);
 	glutAddMenuEntry("Dibujo 2", 2);
@@ -95,8 +88,7 @@ void init()
     glClearColor(0,0,0,0);
     // Habilitar la prueba de profundidad de Z-buffer
     glEnable(GL_DEPTH_TEST);
-    ancho = 800;
-    alto = 600;
+    
 }
 
 int main(int argc, char* argv[])
@@ -105,10 +97,10 @@ int main(int argc, char* argv[])
     glutInit(&argc,argv);
     // Solicitar ventana con color real y doble buffer con Z-buffer
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowSize (800, 600);
+    glutInitWindowSize (1300, 700);
     glutInitWindowSize(ancho, alto);
     // Crear ventana
-    glutCreateWindow("Cubo controlado por teclas");
+    glutCreateWindow("Menu-figuras");
 	init();
     // Funciones de retrollamada
     glutDisplayFunc(display);
